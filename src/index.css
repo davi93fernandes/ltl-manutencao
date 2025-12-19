@@ -167,3 +167,31 @@ button {
     font-size: 2rem;
   }
 }
+
+.sucesso {
+  background: #020617;
+  border-radius: 12px;
+  padding: 32px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.sucesso h2 {
+  color: #22c55e;
+  margin-bottom: 12px;
+}
+
+.sucesso p {
+  color: #cbd5e1;
+  margin-bottom: 20px;
+}
+
+.btn-whats {
+  background: #22c55e;
+  color: white;
+  padding: 14px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+

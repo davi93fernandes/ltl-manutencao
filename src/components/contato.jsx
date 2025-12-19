@@ -1,50 +1,41 @@
+import { useState } from "react";
+
 export default function Contato() {
+  const [enviado, setEnviado] = useState(false);
+
   return (
-    <section className="section" id="contato">
-      <h1>Contato</h1>
-      <p>
-        Entre em contato para solicitar orçamento ou tirar dúvidas sobre
-        nossos produtos e serviços.
-      </p>
+    <section id="contato">
+      {!enviado ? (
+        <form
+          name="contato"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          onSubmit={() => setEnviado(true)}
+          className="form-contato"
+        >
+          <input type="hidden" name="form-name" value="contato" />
+          <input type="text" name="nome" placeholder="Seu nome" required />
+          <input type="email" name="email" placeholder="Seu e-mail" required />
+          <textarea name="mensagem" placeholder="Mensagem" required />
 
-     <form
-  name="contato"
-  method="POST"
-  data-netlify="true"
-  netlify-honeypot="bot-field"
-  action="/index.html"
-  className="form-contato"
->
+          <button type="submit">Enviar</button>
+        </form>
+      ) : (
+        <div className="sucesso">
+          <h2>Mensagem enviada com sucesso ✅</h2>
+          <p>Em breve entraremos em contato.</p>
 
-        {/* Campo anti-spam invisível */}
-        <input type="hidden" name="form-name" value="contato" />
-        <p hidden>
-          <label>
-            Não preencha: <input name="bot-field" />
-          </label>
-        </p>
-
-        <div className="campo">
-          <label htmlFor="nome">Nome</label>
-          <input id="nome" type="text" name="nome" required />
+          <a
+            href="https://wa.me/5599999999999"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-whats"
+          >
+            Falar agora pelo WhatsApp
+          </a>
         </div>
-
-        <div className="campo">
-          <label htmlFor="email">E-mail</label>
-          <input id="email" type="email" name="email" required />
-        </div>
-
-        <div className="campo">
-          <label htmlFor="mensagem">Mensagem</label>
-          <textarea id="mensagem" name="mensagem" required />
-        </div>
-
-        <button className="btn" type="submit">
-          Enviar mensagem
-        </button>
-      </form>
+      )}
     </section>
   );
 }
-
-
