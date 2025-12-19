@@ -40,7 +40,7 @@ export default function Contato() {
         </div>
 
         <button className="btn" type="submit">
-          Enviar mensagem
+          Enviar mensage
         </button>
       </form>
     </section>
