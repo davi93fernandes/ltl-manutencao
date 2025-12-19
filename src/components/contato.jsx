@@ -12,7 +12,7 @@ export default function Contato() {
   method="POST"
   data-netlify="true"
   netlify-honeypot="bot-field"
-  action="/"
+  action="/obrigado"
   className="form-contato"
 >
 
