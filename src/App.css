@@ -271,45 +271,7 @@ body {
 }
 
 
-.contato {
-  background: #020617;
-  padding: 80px 20px;
-}
 
-.contato-container {
-  max-width: 520px;
-  margin: 0 auto;
-}
-
-.form-contato {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  background: #020617;
-  padding: 32px;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-}
-
-.form-contato h2 {
-  text-align: center;
-  color: #ffffff;
-  margin-bottom: 12px;
-}
-
-.form-contato input,
-.form-contato textarea {
-  background: #020617;
-  border: 1px solid #334155;
-  color: #ffffff;
-  padding: 12px;
-  border-radius: 8px;
-}
-
-.form-contato textarea {
-  min-height: 120px;
-  resize: vertical;
-}
 
 
 
