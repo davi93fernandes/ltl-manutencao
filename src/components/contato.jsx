@@ -7,13 +7,15 @@ export default function Contato() {
         nossos produtos e serviços.
       </p>
 
-      <form
-        name="contato"
-        method="POST"
-        data-netlify="true"
-        netlify-honeypot="bot-field"
-        className="form-contato"
-      >
+     <form
+  name="contato"
+  method="POST"
+  data-netlify="true"
+  netlify-honeypot="bot-field"
+  action="/"
+  className="form-contato"
+>
+
         {/* Campo anti-spam invisível */}
         <input type="hidden" name="form-name" value="contato" />
         <p hidden>
