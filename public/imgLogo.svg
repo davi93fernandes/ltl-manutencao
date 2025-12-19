@@ -1,0 +1,42 @@
+export default function Logo() {
+  return (
+    <svg
+      className="logo-svg"
+      viewBox="0 0 500 500"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-label="Logo Correntes Industriais"
+    >
+      <defs>
+        <radialGradient id="bgGradient" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stopColor="var(--logo-bg-start)" />
+          <stop offset="100%" stopColor="var(--logo-bg-end)" />
+        </radialGradient>
+
+        <linearGradient id="starGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="var(--logo-star-start)" />
+          <stop offset="100%" stopColor="var(--logo-star-end)" />
+        </linearGradient>
+      </defs>
+
+      <circle
+        cx="250"
+        cy="250"
+        r="230"
+        fill="url(#bgGradient)"
+        stroke="var(--logo-border)"
+        strokeWidth="10"
+      />
+
+      <g
+        fill="none"
+        stroke="url(#starGradient)"
+        strokeWidth="12"
+        strokeLinejoin="round"
+      >
+        <path d="M250 100 L400 360 L100 360 Z" />
+        <path d="M250 400 L400 140 L100 140 Z" />
+      </g>
+    </svg>
+  );
+}
+

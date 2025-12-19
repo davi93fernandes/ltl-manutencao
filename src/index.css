@@ -1,0 +1,169 @@
+:root {
+  --azul-escuro: #0f172a;
+  --azul: #1e3a8a;
+  --azul-claro: #3b82f6;
+  --cinza-claro: #f1f5f9;
+  --cinza-medio: #cbd5e1;
+  --texto: #334155;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--cinza-claro);
+  color: var(--texto);
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  position: relative;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(90deg, var(--azul-escuro), var(--azul));
+  color: white;
+  padding: 14px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.logo {
+  size: 20px;
+  display: none;
+  align-items: center;
+  gap: 50px;
+  
+}
+
+.logo img {
+  size: 20px;
+}
+
+.menu a {
+  color: white;
+  margin-right: 40px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.menu a:hover {
+  color: var(--azul-claro);
+}
+
+/* ===== HERO ===== */
+.hero {
+  padding: 140px 20px 100px;
+  background: linear-gradient(135deg, var(--azul-escuro), var(--azul));
+  color: white;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin: 15px 0 25px;
+}
+
+/* ===== BOTÃO ===== */
+.btn {
+  background: var(--azul-claro);
+  color: white;
+  padding: 12px 28px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #2563eb;
+}
+
+/* ===== SEÇÕES ===== */
+.section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 100px 20px;
+}
+
+.section h1 {
+  color: var(--azul-escuro);
+  margin-bottom: 20px;
+}
+
+/* ===== PRODUTOS ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid var(--cinza-medio);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== FORM ===== */
+form {
+  max-width: 500px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid var(--cinza-medio);
+  font-size: 15px;
+}
+
+textarea {
+  min-height: 120px;
+}
+
+button {
+  width: 100%;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    margin-top: 10px;
+  }
+
+  .menu a {
+    margin-left: 0;
+    margin-right: 15px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
