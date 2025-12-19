@@ -8,26 +8,33 @@ export default function Contato() {
       </p>
 
       <form
-        className="form-contato"
         name="contato"
         method="POST"
         data-netlify="true"
+        netlify-honeypot="bot-field"
+        className="form-contato"
       >
+        {/* Campo anti-spam invisível */}
         <input type="hidden" name="form-name" value="contato" />
+        <p hidden>
+          <label>
+            Não preencha: <input name="bot-field" />
+          </label>
+        </p>
 
         <div className="campo">
-          <label>Nome</label>
-          <input type="text" name="nome" required />
+          <label htmlFor="nome">Nome</label>
+          <input id="nome" type="text" name="nome" required />
         </div>
 
         <div className="campo">
-          <label>E-mail</label>
-          <input type="email" name="email" required />
+          <label htmlFor="email">E-mail</label>
+          <input id="email" type="email" name="email" required />
         </div>
 
         <div className="campo">
-          <label>Mensagem</label>
-          <textarea name="mensagem"></textarea>
+          <label htmlFor="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" required />
         </div>
 
         <button className="btn" type="submit">
@@ -37,6 +44,5 @@ export default function Contato() {
     </section>
   );
 }
-
 
 
