@@ -12,6 +12,7 @@ export default function Navbar() {
         <a href="#empresa">Empresa</a>
         <a href="#produtos">Produtos</a>
         <a href="#contato">Contato</a>
+        
       </div>
     </nav>
   );

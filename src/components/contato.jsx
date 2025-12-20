@@ -32,7 +32,7 @@ export default function Contato() {
   }
 
   return (
-    <section className="contato">
+    <section id="contato" className="contato">
       <form
         name="contato"
         method="POST"

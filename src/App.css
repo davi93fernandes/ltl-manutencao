@@ -94,6 +94,17 @@ body {
 .logo-star {
   stroke-width: 12;
   stroke-linejoin: round;
+  animation: girarLogo 8s linear infinite;
+
+  /* Animação */
+@keyframes girarLogo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 }
 
 /* Gradiente da estrela */
@@ -117,6 +128,7 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+  
 }
 
 .logo-svg {
