@@ -4,7 +4,7 @@ export default function Contato() {
   const [enviado, setEnviado] = useState(false);
 
   return (
-    <section id="contato">
+    <section className="contato">
       <form
         name="contato"
         method="POST"
