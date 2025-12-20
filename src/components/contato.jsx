@@ -23,7 +23,7 @@ export default function Contato() {
             <input type="email" name="email" placeholder="Seu e-mail" required />
             <textarea name="mensagem" placeholder="Mensagem" required />
 
-            <button type="submit">Enviar</button>
+            <button type="submit" className="btn">Enviar</button>
           </>
         ) : (
           <div className="sucesso">
