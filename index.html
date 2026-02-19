@@ -3,29 +3,39 @@
   <head>
     <meta charset="UTF-8" />
 
-    <title>
-      LTL Manutenção de Fornos Industriais | Soluções para a Indústria
-    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>LTL Manutenção de Fornos Industriais</title>
 
     <meta
       name="description"
-      content="Especialistas em manutenção de fornos industriais, correntes industriais e engrenagens. Soluções completas para a indústria com qualidade e resistência."
+      content="Especialistas em manutenção de fornos industriais e soluções para a indústria."
     />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="index, follow" />
 
-    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/estrela-de-davi.ico" />
 
-    <!-- Open Graph (WhatsApp, Facebook, LinkedIn) -->
-    <meta property="og:title" content="LTL Manutenção de Fornos Industriais" />
-    <meta property="og:description" content="Soluções industriais em manutenção de fornos, correntes e engrenagens." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://seudominio.com" />
-    <meta property="og:image" content="https://seudominio.com/og-image.jpg" />
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-      <meta name="google-site-verification" content="googled30c81c620a33b1f.html" />
+    <!-- Google Verification -->
+    <meta name="google-site-verification" content="COLE_AQUI_SEU_CODIGO" />
   </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+
+    <!-- Formulário oculto para Netlify -->
+    <form
+      name="contato"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      hidden
+    >
+      <input type="hidden" name="form-name" value="contato" />
+      <input type="text" name="nome" />
+      <input type="email" name="email" />
+      <textarea name="mensagem"></textarea>
+    </form>
+  </body>
+</html>
