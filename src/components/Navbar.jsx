@@ -5,7 +5,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="logo">
         <Logo />
-        <span>LTL Manutenção de fornos industriais</span>
+        <span>Correntes para fornos industriais</span>
       </div>
 
       <div className="menu">
