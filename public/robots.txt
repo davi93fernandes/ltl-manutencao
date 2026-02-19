@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ltlmanutencao.netlify.app/sitemap.xml
